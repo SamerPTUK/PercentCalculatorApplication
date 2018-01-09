@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="What is" />
+
+    <EditText
+        android:id="@+id/percentageEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter Percentage"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/percentageEditText"
+        android:layout_alignStart="@+id/percentageEditText"
+        android:layout_below="@+id/percentageEditText"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numberEditText"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/percentageEditText"
+        android:layout_toRightOf="@+id/percentageEditText"
+        android:text="%"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/percentageEditText"
+        android:layout_centerHorizontal="true"
+        android:text="of"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#e52928"
+        android:text="CALCULATE" />
+
+</RelativeLayout>
